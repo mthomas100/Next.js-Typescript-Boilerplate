@@ -8,7 +8,10 @@ module.exports = {
     },
     darkMode: false, // or 'media' or 'class'
     theme: {
-        extend: {},
+        fontFamily: {
+            // permanentMarker: ["Permanent Marker", "cursive"],
+            // gloria: ["Gloria Hallelujah", "cursive"],
+        },
     },
     variants: {
         extend: {},

@@ -33,19 +33,28 @@ class CustomDocument extends Document {
         } finally {
             sheet.seal();
         }
-        const initialProps = await Document.getInitialProps(ctx);
-
-        return initialProps;
     }
 
     render() {
         return (
             <Html lang="en" dir="ltr">
                 <Head>
+                    <meta charSet="utf-8" />
                     <meta
-                        name="description"
-                        content="The Healthy Fermentary is the highest quality source of deliverable fermented beverages"
+                        name="name of the webapp"
+                        content="description of the webapp"
                     />
+                    {/* Picture to be served to 3rd party sites generating a preview of the site */}
+                    {/* <meta
+                        property="og:image"
+                        content="https://res.cloudinary.com/mthomas/image/upload/v1637877381/portfolioSite/portfolio_Pic_c114254a60.jpg"
+                    /> */}
+
+                    {/* Permanent Marker */}
+                    {/* <link
+                        href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap"
+                        rel="stylesheet"
+                    /> */}
                 </Head>
                 <body>
                     <Main />
