@@ -1,0 +1,9 @@
+overwrite: true
+schema: "../strapi/exports/graphql/schema.graphql"
+documents: "graphql/**/*.tsx"
+generates:
+    ./graphql/strapiTypes.tsx:
+        plugins:
+            - "typescript"
+            - "typescript-operations"
+            - "typescript-react-apollo"
